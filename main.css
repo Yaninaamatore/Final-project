@@ -22,130 +22,32 @@ body {
 }
 
 /* navigation starts here */
-.header-home {
- background-color: rgb(156, 68, 68);
- box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
- padding: 20px;
- color: #ffffff;
- display: flex;
-}
 
-
-header .navigation {
- display: flex;
- justify-content: flex-start;
- align-items: center;
-}
-
-.header-home nav ul {
- display: flex;
- margin-left: auto;
-
-}
-
-nav.navigation,
-ul {
- height: 60px;
- display: flex;
- justify-content: flex-end;
- align-items: center;
+/* mobile */
+header{
  width: 100%;
+ height:10vh;
+ display: flex;
+ justify-content:flex-end;
+ align-items: center;
+}
+.navigation, ul{
+ display:flex;
+ gap:1em;
+ padding: 0.5em 0.5em
 }
 
-.navigation ul {
- list-style-type: none;
+
+.navigation :first-child{
+ align-self: flex-start;
 }
 
-.navigation ul a,
-.btn {
- text-decoration: none;
- font-weight: bold;
- text-decoration: none;
- font-weight: bold;
+
+ul,
+a{
+list-style: none;
+text-decoration: none;
 }
-
-.navigation ul a {
- color: aliceblue;
-}
-
-.navigation ul li,
-.btn {
- margin-right: 20px;
- font-size: 1.5em;
-}
-
-.navigation ul li {
- padding: 20px;
-}
-
-.btn {
- background-color: rgb(224, 215, 215);
- color: rgb(129, 55, 26);
- display: inline-block;
- width: 140px;
- height: 50px;
- text-align: center;
- border-radius: 4px;
- padding: 12px 10px;
- margin-left: 24px;
- margin-right: 20px;
-}
-
-.logo {
- width: 600px;
- font-size: 2em;
- padding: 10px 30px;
- text-transform: uppercase;
- margin-left: 20px;
-}
-
-/* media queries Navbar */
-
-@media (max-width: 750px) {
- .header-home nav {
-  color: black;
-  display: flex;
-  align-items: center;
- }
-
- .header-home nav ul {
-  display: flex;
-  font-size: 12px;
- }
-
- .header-home .logo {
-  margin-left: auto;
- }
-
- .header-home .btn {
-  order: -3;
- }
-
- nav ul li {
-  /* flex-grow: -1; */
-  margin-left: 20px;
-  padding: 10px;
-  text-align: right;
- }
-
- .logo {
-  text-align: center;
-  font-weight: 800;
-  min-width: 200px;
-  font-size: 30px;
-  padding: 10px 10px;
-  text-transform: uppercase;
-  margin-left: 5px;
-  order: 1;
- }
-
- .btn {
-  order: -2;
- }
-
-}
-
-@media (max-width: 400px) {}
 
 
  /* navigation ends here */
