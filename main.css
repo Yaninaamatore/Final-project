@@ -3,11 +3,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 /* Externar resources end */
-/* Typo */
 
-html{
+/* Typo */
+html {
  font-family: 'Nunito Sans', sans-serif;
 }
+
+/* Typo ends */
 
 * {
  box-sizing: border-box;
@@ -96,10 +98,10 @@ ul {
  text-transform: uppercase;
  margin-left: 20px;
 }
+
 /* media queries Navbar */
 
-@media (max-width: 750px) 
-{
+@media (max-width: 750px) {
  .header-home nav {
   color: black;
   display: flex;
@@ -108,7 +110,8 @@ ul {
 
  .header-home nav ul {
   display: flex;
-  }
+  font-size: 12px;
+ }
 
  .header-home .logo {
   margin-left: auto;
@@ -119,80 +122,87 @@ ul {
  }
 
  nav ul li {
-  /* flex-grow: 1; */
+  /* flex-grow: -1; */
   margin-left: 20px;
+  padding: 10px;
+  text-align: right;
  }
+
  .logo {
-  background-color: blue;
+  text-align: center;
+  font-weight: 800;
   min-width: 200px;
-  font-size: 40px;
+  font-size: 30px;
   padding: 10px 10px;
   text-transform: uppercase;
   margin-left: 5px;
-  order:1;
+  order: 1;
  }
+
  .btn {
-  order:-2;
+  order: -2;
  }
 
 }
 
+@media (max-width: 400px) {}
 
-/* navigation ends here */
 
-/* main */
+ /* navigation ends here */
 
-.box {
- background-color: rgb(206, 180, 180);
- font-size: 2em;
- display: flex;
- justify-content: center;
- align-items: center;
-}
+ /* main */
 
-.row-1 {
- height: 100vh;
- display: grid;
- gap: 5px;
- grid-template-columns: repeat(3, 1fr);
- grid-template-rows: repeat(4, 1fr);
- place-content: center;
-}
+ .box {
+  background-color: rgb(206, 180, 180);
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
 
-/* I can span colums or rows like these */
+ .row-1 {
+  height: 100vh;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  place-content: center;
+ }
 
-/* Option 1: */
+ /* I can span colums or rows like these */
 
-/* .a{
+ /* Option 1: */
+
+ /* .a{
   grid-column-start: 1;
   grid-column-end:4;
  } */
 
-/* option 2: */
-.a {
- grid-column: 1/3;
- grid-row: 1/3;
-}
+ /* option 2: */
+ .a {
+  grid-column: 1/3;
+  grid-row: 1/3;
+ }
 
-/* option3: */
-.c {
- grid-row: span 2;
-}
+ /* option3: */
+ .c {
+  grid-row: span 2;
+ }
 
-.f {
- grid-column: span 3;
-}
+ .f {
+  grid-column: span 3;
+ }
 
-/* row-2 */
+ /* row-2 */
 
-.row-2 {
- height: 100vh;
- display: grid;
- background-color: rgb(197, 196, 190);
-}
+ .row-2 {
+  height: 100vh;
+  display: grid;
+  background-color: rgb(197, 196, 190);
+ }
 
-.row-3 {
- height: 100vh;
- display: grid;
- background-color: rgb(221, 213, 175);
-}
+ .row-3 {
+  height: 100vh;
+  display: grid;
+  background-color: rgb(221, 213, 175);
+ }
