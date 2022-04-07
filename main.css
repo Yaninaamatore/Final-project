@@ -6,19 +6,19 @@
 
 /* Typo */
 html {
- font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 /* Typo ends */
 
 * {
- box-sizing: border-box;
- margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 html,
 body {
- min-height: 100vh;
+  min-height: 100vh;
 }
 
 /* navigation starts here */
@@ -26,103 +26,107 @@ body {
 /* mobile Menu */
 
 header {
- width: 100vw;
- height: 10vh;
- display: flex;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
 
 }
 
 .navigation,
 ul {
- display: flex;
- justify-content:flex-start;
- align-items: center;
- gap: 1em;
- padding: 0.5em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+  padding: 0.5em;
 }
 
 .navigation {
- flex-grow: 1;
+  flex-grow: 1;
 }
 
 .logo {
- margin-left: 15px;
- padding: 0.2em;
- font-size: 1.7em;
- text-transform: uppercase;
+  margin-left: 15px;
+  padding: 0.2em;
+  font-size: 1.7em;
+  text-transform: uppercase;
 }
 
 ul,
 a {
- list-style: none;
- text-decoration: none;
- padding: 0.2em;
- font-size: 1em;
- font-weight: bold;
+  list-style: none;
+  text-decoration: none;
+  padding: 0.2em;
+  font-size: 1em;
+  font-weight: bold;
 }
+
 ul {
- margin-left: 25px;
+  margin-left: 25px;
 
 }
+
 .logo {
- margin-left: 15px;
- padding: 0.2em;
- font-size: 1.7em;
- text-transform: uppercase;
+  margin-left: 15px;
+  padding: 0.2em;
+  font-size: 1.7em;
+  text-transform: uppercase;
 }
 
 
 
 /* wider mobile devices */
 @media all and (min-width: 390px) {
- ul {
-  margin-left: 40px;
- }
+  ul {
+    margin-left: 40px;
+  }
 
- a {
-  padding-left: 10px;
- }
-} 
+  a {
+    padding-left: 10px;
+  }
+}
 
 /* tablet menu */
 @media all and (min-width: 450px) {
- .logo {
-  font-size: 2.5em;
-  letter-spacing: 15px;
-  margin-left: 30px ;
-  flex-grow: 1;
- }
+  .logo {
+    font-size: 2.5em;
+    letter-spacing: 15px;
+    margin-left: 30px;
+    flex-grow: 1;
+  }
 
- .navigation {
-  display: flex;
-  justify-content:flex-end;
-  justify-content:space-around;
-  gap: 1em;
-  padding: 0.5em;
- }
- 
- ul{
-   margin-right:40px ;
-  
- }
- a{
-  font-size: 1.5em;
-  letter-spacing:5px;
-  margin-right:10px
- }
- 
+  .navigation {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-around;
+    gap: 1em;
+    padding: 0.5em;
+  }
+
+  ul {
+    margin-right: 40px;
+
+  }
+
+  a {
+    font-size: 1.5em;
+    letter-spacing: 5px;
+    margin-right: 10px
+  }
+
 }
 
 /* Desktop menu */
 @media all and (min-width: 768px) {
- .navigation,
- ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 1em;
-  padding: 0.5em;
- }
+
+  .navigation,
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
+    padding: 0.5em;
+  }
 }
 
 /* navigation ends here */
@@ -150,17 +154,8 @@ ul {
  background-image: url(https://picsum.photos/id/22/2550/1400);
 } */
 
-/* I can span colums or rows like these */
 
-/* Option 1: */
-
-/* .a{
-  grid-column-start: 1;
-  grid-column-end:4;
- } */
-
-
- .row-1 {
+.row-1 {
   width: 100%;
   height: 100vh;
   display: grid;
@@ -171,49 +166,114 @@ ul {
   background-image: url(https://picsum.photos/id/22/2550/1400);
   background-repeat: no-repeat;
   background-position: center;
-  background-size:cover;
- }
- 
- .box {
-  /* background-color: rgb(206, 180, 180); */
+  background-size: cover;
+  /* to scroll over the image :) */
+  background-attachment: fixed;
+}
+
+.box {
   background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
- }
- 
- /* left block styling */
- 
- .a {
+}
+
+/* left block styling */
+
+.a {
+  background-color: rgba(255, 255, 255, .30);
   grid-column: 1;
   grid-row: 1;
   display: flex;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, .30);
- }
- 
- @media (max-width: 900px) {
+  justify-content: flex-start;
+}
+
+/* general PT typo */
+
+.box-pt-fist-line,
+.box-pt-second-line,
+.box-pt-third-line {
+  text-transform: capitalize;
+  color: #413737;
+}
+
+
+.box-pt-fist-line {
+  font-size: 1.5em;
+}
+
+.box-pt-second-line,
+.box-pt-third-line {
+  font-size: 4em;
+}
+
+.a {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* media query for tablet and mobile */
+@media (max-width: 950px) {
   .row-1 {
-   grid-template-columns: 1fr;
-   grid-template-rows: 55% 45%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
   }
- 
+
   .a {
-   grid-row: 2;
+    grid-row: 2;
+    padding-top: 10vh;
+    padding-right: 40vw;
   }
- }
+
+  /* text edit for mobile */
+  .a {
+    padding-left: 12vw
+  }
+
+  .box-pt-second-line,
+  .box-pt-third-line {
+    font-size: 3em;
+  }
+
+  /* bg image edit mobile */
+  .row-1 {
+    background-image: url(https://picsum.photos/id/22/1250/1250);
+
+  }
+}
+
+/* media query tablet and desktop */
+
+@media (min-width: 950px) {
+  .a {
+    padding-top: 55vh;
+    padding-left: 10vw;
+  }
+}
+
 /* row-2 */
 
 .row-2 {
- height: 100vh;
- display: grid;
- background-color: rgb(197, 196, 190);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
+
+.container-1-row-2,
+.container-2-row-2 {
+  border: 1px solid red;
+  background-color: rgba(224, 218, 218, 0.4);
+
+}
+
+
+/* row-2 ends */
 
 .row-3 {
- height: 100vh;
- display: grid;
- background-color: rgb(221, 213, 175);
+  height: 100vh;
+  display: grid;
+  background-color: rgb(221, 213, 175);
 }
-
-
