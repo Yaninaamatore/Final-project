@@ -45,9 +45,11 @@ ul {
  flex-grow: 1;
 }
 
-ul {
- margin-left: 25px;
-
+.logo {
+ margin-left: 15px;
+ padding: 0.2em;
+ font-size: 1.7em;
+ text-transform: uppercase;
 }
 
 ul,
@@ -58,7 +60,10 @@ a {
  font-size: 1em;
  font-weight: bold;
 }
+ul {
+ margin-left: 25px;
 
+}
 .logo {
  margin-left: 15px;
  padding: 0.2em;
@@ -66,7 +71,7 @@ a {
  text-transform: uppercase;
 }
 
-/* 
+
 
 /* wider mobile devices */
 @media all and (min-width: 390px) {
@@ -122,11 +127,14 @@ a {
 
 /* navigation ends here */
 
+
 /* main */
 
+/*  1st seccion */
 .box {
- background-color: rgb(206, 180, 180);
- font-size: 2em;
+ /* background-color: rgb(206, 180, 180); */
+ background-color:transparent;
+ font-size: 1em;
  display: flex;
  justify-content: center;
  align-items: center;
@@ -139,6 +147,7 @@ a {
  grid-template-columns: repeat(3, 1fr);
  grid-template-rows: repeat(4, 1fr);
  place-content: center;
+ background-image: url(https://picsum.photos/id/22/2550/1400);
 }
 
 /* I can span colums or rows like these */
@@ -165,6 +174,15 @@ a {
  grid-column: span 3;
 }
 
+/* colums order finished */
+
+.box {
+ background-color:rgba(255, 255, 255, .25);
+}
+.box .c{
+ display:grid;
+ grid-template-columns: 1fr;
+}
 /* row-2 */
 
 .row-2 {
@@ -178,3 +196,5 @@ a {
  display: grid;
  background-color: rgb(221, 213, 175);
 }
+
+
