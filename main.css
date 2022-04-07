@@ -23,98 +23,158 @@ body {
 
 /* navigation starts here */
 
-/* mobile */
-header{
- width: 100%;
- height:10vh;
+/* mobile Menu */
+
+header {
+ width: 100vw;
+ height: 10vh;
  display: flex;
- align-items: center;
+
 }
-.navigation, ul{
- display:flex;
- justify-content: flex-start;
+
+.navigation,
+ul {
+ display: flex;
+ justify-content:flex-start;
  align-items: center;
- gap:1em;
+ gap: 1em;
  padding: 0.5em;
 }
 
-ul {
- margin-left: 30px;
- margin-right: 10px;
+.navigation {
+ flex-grow: 1;
 }
 
-.logo{
- margin-left:10px;
+ul {
+ margin-left: 25px;
+
+}
+
+ul,
+a {
+ list-style: none;
+ text-decoration: none;
+ padding: 0.2em;
+ font-size: 1em;
+ font-weight: bold;
+}
+
+.logo {
+ margin-left: 15px;
  padding: 0.2em;
  font-size: 1.7em;
  text-transform: uppercase;
 }
 
-ul,
-a{
-list-style: none;
-text-decoration: none;
-padding: 0.2em;
-font-size: 1em;
-font-weight: bold;
+/* 
+
+/* wider mobile devices */
+@media all and (min-width: 390px) {
+ ul {
+  margin-left: 40px;
+ }
+
+ a {
+  padding-left: 10px;
+ }
+} 
+
+/* tablet menu */
+@media all and (min-width: 450px) {
+ .logo {
+  font-size: 2.5em;
+  letter-spacing: 15px;
+  margin-left: 30px ;
+  flex-grow: 1;
+ }
+
+ .navigation {
+  display: flex;
+  justify-content:flex-end;
+  justify-content:space-around;
+  gap: 1em;
+  padding: 0.5em;
+ }
+ 
+ ul{
+   margin-right:40px ;
+  
+ }
+ a{
+  font-size: 1.5em;
+  letter-spacing:5px;
+  margin-right:10px
+ }
+ 
 }
 
-
- /* navigation ends here */
-
- /* main */
-
- .box {
-  background-color: rgb(206, 180, 180);
-  font-size: 2em;
+/* Desktop menu */
+@media all and (min-width: 768px) {
+ .navigation,
+ ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  gap: 1em;
+  padding: 0.5em;
  }
+}
 
- .row-1 {
-  height: 100vh;
-  display: grid;
-  gap: 5px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  place-content: center;
- }
+/* navigation ends here */
 
- /* I can span colums or rows like these */
+/* main */
 
- /* Option 1: */
+.box {
+ background-color: rgb(206, 180, 180);
+ font-size: 2em;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
 
- /* .a{
+.row-1 {
+ height: 100vh;
+ display: grid;
+ gap: 5px;
+ grid-template-columns: repeat(3, 1fr);
+ grid-template-rows: repeat(4, 1fr);
+ place-content: center;
+}
+
+/* I can span colums or rows like these */
+
+/* Option 1: */
+
+/* .a{
   grid-column-start: 1;
   grid-column-end:4;
  } */
 
- /* option 2: */
- .a {
-  grid-column: 1/3;
-  grid-row: 1/3;
- }
+/* option 2: */
+.a {
+ grid-column: 1/3;
+ grid-row: 1/3;
+}
 
- /* option3: */
- .c {
-  grid-row: span 2;
- }
+/* option3: */
+.c {
+ grid-row: span 2;
+}
 
- .f {
-  grid-column: span 3;
- }
+.f {
+ grid-column: span 3;
+}
 
- /* row-2 */
+/* row-2 */
 
- .row-2 {
-  height: 100vh;
-  display: grid;
-  background-color: rgb(197, 196, 190);
- }
+.row-2 {
+ height: 100vh;
+ display: grid;
+ background-color: rgb(197, 196, 190);
+}
 
- .row-3 {
-  height: 100vh;
-  display: grid;
-  background-color: rgb(221, 213, 175);
- }
+.row-3 {
+ height: 100vh;
+ display: grid;
+ background-color: rgb(221, 213, 175);
+}
