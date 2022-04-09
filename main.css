@@ -73,7 +73,10 @@ ul {
   text-transform: uppercase;
 }
 
-
+.navaigation ul:hover{
+  color: rgb(110, 99, 99);
+    
+}
 
 /* wider mobile devices */
 @media all and (min-width: 390px) {
@@ -323,6 +326,11 @@ ul {
   text-transform: capitalize;
 }
 
+.btn-gallery:hover{
+  background-color: rgba(255, 255, 255, .5);
+  color: rgb(119, 115, 115);
+  border: transparent;
+}
 
 /* background-color: rgb(255, 255, 255, .5); */
 
