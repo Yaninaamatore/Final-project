@@ -14,6 +14,7 @@ html {
 * {
   box-sizing: border-box;
   margin: 0;
+  /* padding: 0; */
 }
 
 html,
@@ -73,9 +74,9 @@ ul {
   text-transform: uppercase;
 }
 
-.navaigation ul:hover{
+.navaigation ul:hover {
   color: rgb(110, 99, 99);
-    
+
 }
 
 /* wider mobile devices */
@@ -326,7 +327,7 @@ ul {
   text-transform: capitalize;
 }
 
-.btn-gallery:hover{
+.btn-gallery:hover {
   background-color: rgba(255, 255, 255, .5);
   color: rgb(119, 115, 115);
   border: transparent;
@@ -347,6 +348,7 @@ ul {
   .text {
     align-content: space-evenly;
   }
+
   .boxes-row-two {
     height: 60vh;
     width: 40vw;
@@ -373,25 +375,65 @@ ul {
   .text {
     align-content: space-evenly;
   }
-  .text h1{
+
+  .text h1 {
     margin-top: 60px;
     font-size: 2.5em;
   }
- 
-  .text h2{
+
+  .text h2 {
     font-size: 2em;
   }
-  .text p{
+
+  .text p {
     font-size: 1.2em;
   }
 }
 
 /* row-2 ends */
 
-#gallery {
-  background-color: rgb(233, 231, 221);
+/* row 3 */
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  margin: auto;
 }
 
-.row-4 {
-  display: grid;
+.gallery-photo {
+  margin: 5px;
+  flex-basis: 400px;
+  flex-grow: 2;
+  flex-shrink: 1;
+  overflow: hidden;
 }
+
+img {
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+
+.gallery-title {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+
+.h1-gallery {
+  padding: 10px 45px;
+  color: #222;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+
+/* row 4 */
+/* .row-4 {
+  display: grid;
+} */
