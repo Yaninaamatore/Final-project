@@ -257,17 +257,18 @@ ul {
 }
 
 .boxes-row-two .text {
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 30px;
-  justify-content:space-around;
+  padding: 20px;
+  justify-content:space-evenly;
   /* align-items: center; */
 }
 
 .text{
-  gap: 20px;
-
+  gap: 2px;
 }
+
 .text h1,
 .text h2 {
   text-align: center;
