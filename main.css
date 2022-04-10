@@ -135,12 +135,9 @@ ul {
 
 /* navigation ends here */
 
-.row-1,
-.row-2,
-.row-3,
-.row-4 {
+.row {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
 }
 
 .row-1 {
@@ -351,7 +348,7 @@ ul {
   }
 
   .boxes-row-two {
-    height: 60vh;
+    height: 50vh;
     width: 40vw;
     /* justify-content: center; */
   }
@@ -394,29 +391,39 @@ ul {
 /* row-2 ends */
 
 /* row 3 */
+.row-3,
+.row-4{
+  display:grid;
+  place-content: center;
+  text-align: center;
+  font-size: 3em;
+}
+
+.row-3{
+  background-color: rgba(180, 156, 156, 0.4);
+}
+
+/* photos page */
 
 .gallery-container {
+  border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   width: 80vw;
+height: 80%;
+  
   margin: auto;
 }
 
 .gallery-photo {
   margin: 5px;
-  flex-basis: 400px;
-  flex-grow: 2;
+  flex-basis:200px;
+  flex-grow: 1;
   flex-shrink: 1;
   overflow: hidden;
 
 }
-
-/* @media (min-width: 768px) and (max-width: 979px) {
-  div .gallery-photo:hover{
-    border: 1.5px solid #777;
-    transform: scale(1.1);
-  }
-} */
 
 .gallery-photo {
   object-fit: cover;
@@ -449,73 +456,12 @@ ul {
   padding-top: 30px;
 
 }
-
-/* photos page */
-
-.gallery-page-main {
-  background-color: beige;
-}
-
-.row-1-gallery {
-  width: 100vw;
-  height: 90vh;
+#row-photo-1{
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 30px;
-  /* flex-wrap: wrap; */
-  justify-content: flex-start;
-  align-items: center;
+  background-color: rgba(224, 218, 218, 0.4);
 }
 
-.photos,
-.photo-1 {
-  width: 80vw;
-  height: 40vh;
-
-}
-
-.photos {
-  margin-top: 60px;
-
-}
-
-.photo-1 {
-  background-image: url(https://picsum.photos/id/30/400/400);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.photo-description {
-  line-height: 30px;
-
-  width: 80vw;
-}
-
-.photo-description h1,
-.photo-description h2 {
-  padding-top: 30px;
-  text-transform: capitalize;
-
-}
-
-.photo-description h1 {
-  font-size: 2.2em;
-}
-
-.photo-description h2 {
-  font-size: 1.8em;
-}
-
-.photo-description p {
-  font-size: 1em;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-}
-
-.footer {
-  height: 5vh;
-  width: 100vw;
-  background-color: rgb(75, 75, 75);
+.photo-1{
+  border: 1px solid blue;
 }
