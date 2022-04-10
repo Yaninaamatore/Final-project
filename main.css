@@ -283,6 +283,7 @@ ul {
 
 .text h1 {
   text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 .text h2 {
@@ -407,9 +408,17 @@ ul {
   flex-grow: 2;
   flex-shrink: 1;
   overflow: hidden;
+
 }
 
-img {
+/* @media (min-width: 768px) and (max-width: 979px) {
+  div .gallery-photo:hover{
+    border: 1.5px solid #777;
+    transform: scale(1.1);
+  }
+} */
+
+.gallery-photo {
   object-fit: cover;
   object-position: center center;
   width: 100%;
@@ -419,21 +428,94 @@ img {
 
 .gallery-title {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 15px;
   margin: 40px;
 }
 
 .h1-gallery {
-  padding: 10px 45px;
+  padding: 10px;
   color: #222;
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
   font-size: 2em;
+  letter-spacing: 5px;
 }
 
+.h2-gallery {
+  text-transform: capitalize;
+  color: rgb(126, 119, 119);
+  font-size: medium;
+  padding-top: 30px;
 
-/* row 4 */
-/* .row-4 {
-  display: grid;
-} */
+}
+
+/* photos page */
+
+.gallery-page-main {
+  background-color: beige;
+}
+
+.row-1-gallery {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  /* flex-wrap: wrap; */
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.photos,
+.photo-1 {
+  width: 80vw;
+  height: 40vh;
+
+}
+
+.photos {
+  margin-top: 60px;
+
+}
+
+.photo-1 {
+  background-image: url(https://picsum.photos/id/30/400/400);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.photo-description {
+  line-height: 30px;
+
+  width: 80vw;
+}
+
+.photo-description h1,
+.photo-description h2 {
+  padding-top: 30px;
+  text-transform: capitalize;
+
+}
+
+.photo-description h1 {
+  font-size: 2.2em;
+}
+
+.photo-description h2 {
+  font-size: 1.8em;
+}
+
+.photo-description p {
+  font-size: 1em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.footer {
+  height: 5vh;
+  width: 100vw;
+  background-color: rgb(75, 75, 75);
+}
