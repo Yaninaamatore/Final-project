@@ -1,0 +1,15 @@
+
+/* navigation */
+header {
+ width: 100vw;
+ height: 10vh;
+ display: flex;
+}
+
+
+/* Main Homepage */
+
+.row {
+ width: 100vw;
+ height: 90vh;
+}
