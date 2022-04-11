@@ -1,5 +1,5 @@
 html {
- font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 /* external libraries */
@@ -9,22 +9,98 @@ html {
 /* navbar */
 
 .logo {
- font-size: 1.7em;
- text-transform: uppercase;
+  font-size: 1.7em;
+  text-transform: uppercase;
 }
 
 ul,
 a {
- font-size: 1em;
- font-weight: bold;
+  font-size: 1em;
+  font-weight: bold;
 }
 
 
 .logo {
- font-size: 1.7em;
- text-transform: uppercase;
+  font-size: 1.7em;
+  text-transform: uppercase;
 }
 
 .navigation ul:hover {
- color: rgb(110, 99, 99);
+  color: rgb(110, 99, 99);
 }
+
+/* landig section typo */
+
+.box-pt-fist-line,
+.box-pt-second-line,
+.box-pt-third-line {
+  text-transform: capitalize;
+  color: #413737;
+}
+
+
+.box-pt-fist-line {
+  font-size: 1.5em;
+}
+
+.box-pt-second-line,
+.box-pt-third-line {
+  font-size: 4em;
+}
+
+/* section row-2 */
+
+.text h1,
+.text h2 {
+  text-align: center;
+  font-size: 1.5em
+}
+
+.text h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.text h2 {
+  font-weight: 200;
+}
+
+.text p {
+  text-align: justify;
+  line-height: 1.2em;
+  padding: 10px;
+  max-width: 500px;
+  font-size: 1em;
+}
+
+/* typo row 3 */
+.about-grid h1 {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 1.5em;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.h2-about {
+  padding-top: 30px ;
+  padding-bottom: 20px;
+  text-align: center;
+  font-weight: 200;
+  font-size: 1.5em;
+  text-transform: capitalize;
+
+}
+
+.p-about-one,
+.p-about-two {
+  padding: 10px 40px;
+  line-height: 1.2em;
+}
+.p-about-one {
+  font-weight: bold;
+}
+.p-about-two {
+  margin-bottom: 20px;}
+
