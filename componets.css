@@ -23,11 +23,14 @@
 }
 /* Row-3 */
 
-.iframe-about{
- 
+.iframe-about{ 
  position: relative;
  overflow: hidden;
  padding-top:56.25%;
+ margin-top: 40px;
+ margin-bottom: 40px;
+ border: 1px solid red;
+
 }
 
 .iframe-youtube{
