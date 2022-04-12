@@ -74,9 +74,9 @@ a {
 }
 
 /* typo row 3 */
-.about-grid h1 {
+.h1 {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
   padding: 20px;
   font-size: 1.5em;
   letter-spacing: 5px;
@@ -84,7 +84,7 @@ a {
 }
 
 .h2-about {
-  padding-top: 30px ;
+  padding-top: 20px ;
   padding-bottom: 20px;
   text-align: center;
   font-weight: 200;
@@ -95,12 +95,15 @@ a {
 
 .p-about-one,
 .p-about-two {
-  padding: 10px 40px;
+  text-align: left;
   line-height: 1.2em;
+  padding: 10px 30px;
+  max-width: 500px;
+  font-size: 1em;
 }
 .p-about-one {
   font-weight: bold;
 }
 .p-about-two {
-  margin-bottom: 20px;}
+  margin-bottom: 50px;}
 

@@ -23,23 +23,23 @@
 }
 /* Row-3 */
 
-/* iframe video */
-
-.iframe-container{
+.iframe-about{
+ 
  position: relative;
- width: 100%;
- padding-bottom: 56.25%; 
- height: 0;
+ overflow: hidden;
+ padding-top:56.25%;
 }
-.iframe-container iframe{
- position: absolute;
- top:0;
+
+iframe{
+ position:absolute;
+ top: 0;
  left: 0;
- width: 100%;
- height: 100%;
+ width:100%;
+ height:100%;
+ margin:20px 15%;
 }
 
-
+/* Then style the iframe to fit in the container div with full height and width */
 
 /* =========================
 Photo Page

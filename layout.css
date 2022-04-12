@@ -1,11 +1,10 @@
-
 /* navigation starts here */
 
 /* navigation */
 header {
- width: 100vw;
- height: 10vh;
- display: flex;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
 }
 
 
@@ -27,7 +26,7 @@ ul {
 .logo {
   margin-left: 15px;
   padding: 0.2em;
-  }
+}
 
 ul,
 a {
@@ -108,8 +107,8 @@ ul {
 /* First row - Landing Page */
 
 .row {
- width: 100vw;
- height: 90vh;
+  width: 100vw;
+  height: 90vh;
 }
 
 .row-1 {
@@ -225,7 +224,7 @@ ul {
 
 .text h1,
 .text h2 {
-   min-width: 100vw;
+  min-width: 100vw;
 }
 
 
@@ -303,28 +302,35 @@ ul {
 
 /* row 3 */
 
-.about-grid{
-  width: 100%;
-  height: 100%;
-  display:flex;
-  flex-direction: column;
-  gap: 5px;
-  justify-content: flex-start;
+#about {
+  display: grid;
+  place-content: center;
   align-items: center;
-  /* margin-top: 15%; */
-}
+  gap: 5px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
 
-.p-about-one,
-.p-about-two{
-  padding: 40px
 }
-
 .text-about{
   display: flex;
   flex-direction: column;
+  justify-content:center;
+  align-items: center;
 }
+ 
+
+/* @media (min-width: 768px){
+  .p-about{
+border: 1px solid red;
+    display:flex; font-size: 1.2em;
+    justify-content:center;
+
+    
+  }
+} */
+
 
 /* row 4 */
-.row-4{
+.row-4 {
   background-color: rgba(180, 156, 156, 0.4);
 }
