@@ -27,10 +27,8 @@
  position: relative;
  overflow: hidden;
  padding-top:56.25%;
- /* margin-top: 40px;
- margin-bottom: 40px; */
- border: 1px solid red;
-
+ /* margin-top: 40px; */
+ margin-bottom: 20px;
 }
 
 .iframe-youtube{
