@@ -338,6 +338,13 @@ width: 40%;
 
 }
 
+/* typo h2-iframe column */
+
+.h3-iframe h3{
+  padding: 20px;
+color: #666;
+}
+
 /* media query for mobile */
  @media (max-width: 800px) {
   #about {
