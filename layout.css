@@ -301,7 +301,9 @@ ul {
 /* row-2 ends */
 
 /* row 3 */
-
+.row-3{
+  height: 90%;
+}
 #about {
   display: grid;
   place-content: center;
@@ -317,17 +319,21 @@ ul {
   justify-content:center;
   align-items: center;
 }
- 
+.cl-2{
+  background-color: rgba(250, 235, 215, .5);
 
-/* @media (min-width: 768px){
-  .p-about{
-border: 1px solid red;
-    display:flex; font-size: 1.2em;
-    justify-content:center;
+}
+/* media query for mobile */
 
-    
+@media (max-width: 800px){
+  #about {   
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+      }
+  .h2-about {
+    font-size: 0.9em;
   }
-} */
+}
 
 
 /* row 4 */
