@@ -401,10 +401,15 @@ ul {
   width: 90%;
   height: 100%;
   border: 1px solid orange;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
 }
 
-/* .contact-text h1,
+.contact-text h1,
 .contact-text h2,
 .contact-text p {
 padding:15px 20px;
-} */
+}
