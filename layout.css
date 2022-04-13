@@ -375,7 +375,7 @@ ul {
 /* row 4 */
 .row-4 {
   width: 100vw;
-  height: 100vw;
+  height: 100%;
 
 }
 
@@ -394,7 +394,7 @@ ul {
   display:grid;
   grid-template-columns:1fr 1fr;
   grid-template-rows: 10% 70%;
-   border:1px solid purple; 
+ 
 }
 .box-a{
   grid-column: span 2 ;
@@ -403,16 +403,21 @@ ul {
 .box-a,
 .box-b,
 .box-c{
-  background-color: rgba(240, 248, 255, 0.5);
+  border:1px solid blue;
 }
 
+/* media for mobile */
 @media (max-width: 1000px){
   .contact-grid{    
     grid-template-columns:1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 20% 1fr 1fr;
   }
   .box-a{
     grid-column: span none; ;
   }
- 
+
+  .form-wrapper{
+    display:flex;
+    justify-content:center;
+}
 }
