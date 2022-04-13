@@ -124,7 +124,7 @@ h4 {
 #contact-form {
  background-color: rgba(72, 72, 72, 0.9);
  border-radius: 7px;
- padding: 10px 20px 30px 20px;
+ padding: 10px;
  -webkit-border-radius: 7px;
  -moz-border-radius: 7px;
 }
@@ -230,10 +230,12 @@ textarea:required {
 }
 }
 
-
+/* 
 /*  iframe map*/
-.iframe-map{
- width: 70%;
+/* .iframe-map{
+ width: 60%;
+ border: 1px solid red;
+ margin: 20px;
 }
 
 .map-responsive {
@@ -251,4 +253,5 @@ textarea:required {
  width: 100%;
  position: absolute;
  
-}
+}  */
+/* iframe map */
