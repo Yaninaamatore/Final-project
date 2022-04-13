@@ -66,11 +66,12 @@ a {
 }
 
 .text p {
-  text-align: justify;
+ text-align: left;
   line-height: 1.2em;
   padding: 10px;
   max-width: 500px;
   font-size: 1em;
+  letter-spacing: 1px;
 }
 
 @media (min-width: 400px) {
@@ -81,6 +82,11 @@ a {
   }
 }
 /* typo row 3 */
+
+.h3-iframe h3 {
+  padding: 20px;
+  color: #666;
+}
 .h1 {
   text-align: center;
   /* margin-top: 10px; */
@@ -97,7 +103,7 @@ a {
   font-weight: 200;
   font-size: 1.5em;
   text-transform: capitalize;
-
+  
 }
 
 .p-about{
@@ -117,4 +123,5 @@ a {
 }
 .p-about-two {
   margin-bottom: 50px;}
+
 
