@@ -230,8 +230,8 @@ textarea:required {
 
 
 .gmap_container{
- margin-top: 20px;
- margin-left: 40px;
+ margin-top: 60px;
+ margin-left:0px;
 	height: 0;
 	overflow: hidden;
 	padding-bottom: 50%; /* desired aspect ratio */

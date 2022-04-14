@@ -381,17 +381,23 @@ ul {
 
 .contact-grid {
   margin: 0px;
-  width: 100vw;
-  height: 100%;
+  height: 90%;
   gap: 5px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 25% 75%;
-
+  grid-template-areas: 
+  'title title'
+  'text text'
+  'form map'
 }
+/* grid-template-columns: 1fr 1fr;
+grid-template-rows: 20vh 10vh 70vh; */
 
-.box-a {
-  /* grid-column: span 2 ; */
+.box-a { grid-area: title; }
+.box-b { grid-area: text; }
+.box-c { grid-area: form; }
+.box-d { grid-area: map; }
+
+/* .box-a {
   padding: 30px 40px;
   text-align: center;
 }
@@ -404,37 +410,29 @@ ul {
 
 }
 
-
+.box-b{
+  grid-row: 2 3;
+}
 
 .box-b-text {
-  /* padding: 20px 20px; */
+  padding-top: 30px;
+  padding-left: 30px;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
   gap: 30px;
-}
+} */
+/* padding-left: 25%; */
 
 
-
-.box-b-text p {
+/* .box-b-text p {
   max-width: 200px;
-}
+} */
 
-.box-c {
-  width: 100%;
-  order: 1;
-}
 
 /* media for mobile */
 @media (max-width: 1000px) {
   .contact-grid {
     grid-template-columns: 1fr;
     grid-template-rows: 0.25fr 0.25fr 0.4fr 1fr;
-  }
-
-  .box-a {
-    grid-column: span none;
-    ;
   }
 
   .form-wrapper {
