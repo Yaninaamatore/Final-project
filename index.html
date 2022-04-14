@@ -19,14 +19,16 @@
   </nav>
  </header>
  <main>
+<!-- ========= Landing Section ======================== -->
   <section class=" row row-1">
    <div class="box a">
     <span class="box-pt-fist-line">project title</span>
     <h1 class="box-pt-second-line">project</h1>
     <h1 class="box-pt-third-line">name</h1>
    </div>
-   <div class="box b">
+    <div class="box b">
   </section>
+  <!-- ========= Intro Section ======================== -->
  <section class="row row-2">
   <div class="container-1-row-2">
     <div class="boxes-row-two">
@@ -45,6 +47,9 @@
     </div>
    </div>
   </section>
+
+<!-- ========= About Section ======================== -->
+
   <section class="row row-3" id="about">
     <div class="column-iframe">
       <div class="h3-iframe">
@@ -54,9 +59,12 @@
         <iframe class="iframe-youtube" src="https://www.youtube.com/embed/7OnwoLmrfBI?rel=0&theme=light"  frameborder="0"></iframe>
       </div> 
     </div>
-    <div class="about-column cl-1">  
-      <h1 class="h1">about us</h1>
+    <div class="about-column cl-1"> 
+      <br>
+      <br>
+      <br> 
       <hr>
+      <h1 class="h1">about us</h1>
       <div class="text-about"> 
        <h2 class="h2-about">our mission, vision, and values</h2>
        <div class="p-about">
@@ -66,16 +74,22 @@
      </div>
     </div>
   </section>  
+
+  <!-- ========= Contact Section ======================== -->
+
   <section class="row row-4" id="contact">
     <div class="contact-grid">
       <div class="box-a">
-        <h1 >contact</h1>
         <hr>
+        <br>
+        <h1 >contact</h1>
+        <br>
       </div>
       <div class="box-b">
         <div class="box-b-text">          
           <div class="address">
             <h2>our address</h2>
+            <br>
             <br>
             <p>500 Terry Francois Street
               San Francisco, CA 94158
@@ -83,72 +97,77 @@
           </div>
           <div class="phone">
             <h2>call us</h2>    
-            <br>      
+            <br>  
+            <br>    
             <p>Free Call: 1-800-000-0000 
               Tel: 123-456-7890          
               Fax: 123-456-7890</p>
           </div>
         </div>
+      </div>     
+      <div class="box-c">       
+        <div class="form-wrapper">
+          <div id="contact-form">
+            <div>
+            <br>
+            <h1>flick us a message</h1> 
+            <br>
+            <h4>Have a question or just want to get in touch? Let's chat.</h4> 
+           </div>
+            <p id="failure">Oopsie...message not sent.</p>  
+            <p id="success">Your message was sent successfully. Thank you!</p>
+          <form method="post" action="/">
+              <div>
+                  <label for="name">
+                    <span class="required">Name: *</span> 
+                    <input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+                  </label> 
+              </div>
+              <div>
+                  <label for="email">
+                    <span class="required">Email: *</span>
+                    <input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+                  </label>  
+              </div>
+              <div>		          
+                  <label for="subject">
+                  <span>Subject: </span>
+                    <select id="subject" name="subject" tabindex="4">   
+                       <option value="hello">Product Price Question</option>
+                       <option value="quote"> question one</option>  
+                       <option value="general">question two </option>
+                    </select>
+                  </label>
+              </div>
+              <div>		          
+                  <label for="message">
+                    <span class="required">Message: *</span> 
+                    <textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
+                  </label>  
+              </div>
+              <div>		           
+                  <button name="submit" type="submit" id="submit" >SEND</button> 
+              </div>
+            </form>      
+          </div> 
+        </div>
+      </div>       
+      <div class="box-d">    
         <div class="map_wrapper">
           <div class="gmap_container">
             <iframe class="googlemap"width="484" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=237%20Lambton%20Quay,%20Wellington%20Central,%20Wellington%206011&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
             </iframe>
           </div>        
         </div>
-      </div>      
-      <div class="box-c">
-        <div class="form-wrapper">
-            <div id="contact-form">
-              <div>
-              <h1>contact us</h1> 
-              <br>
-              <h4>Have a question or just want to get in touch? Let's chat.</h4> 
-            </div>
-              <p id="failure">Oopsie...message not sent.</p>  
-              <p id="success">Your message was sent successfully. Thank you!</p>
-            <form method="post" action="/">
-                <div>
-                    <label for="name">
-                      <span class="required">Name: *</span> 
-                      <input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
-                    </label> 
-                </div>
-                <div>
-                    <label for="email">
-                      <span class="required">Email: *</span>
-                      <input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
-                    </label>  
-                </div>
-                <div>		          
-                    <label for="subject">
-                    <span>Subject: </span>
-                      <select id="subject" name="subject" tabindex="4">   
-                         <option value="hello">Product Price Question</option>
-                         <option value="quote">Where are my dragons?!</option>  
-                         <option value="general">- Valar Morghulis - </option>
-                      </select>
-                    </label>
-                </div>
-                <div>		          
-                    <label for="message">
-                      <span class="required">Message: *</span> 
-                      <textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
-                    </label>  
-                </div>
-                <div>		           
-                    <button name="submit" type="submit" id="submit" >SEND</button> 
-                </div>
-              </form>      
-            </div> 
       </div>
-      
-         
-        </div>
-      </div>       
-    </div>
-   
-    </section>
-</main>
+    </div>     
+ </section>
+ <section>
+   <div class="row-5">     
+   </div>
+ </section>
+ </main>
+ 
 
 </body>
 </html>

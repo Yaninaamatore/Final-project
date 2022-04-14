@@ -107,7 +107,7 @@ ul {
 /* First row - Landing Page */
 
 .row {
-  width: 100%;
+  width: 100vw;
   height: 90vh;
 }
 
@@ -304,7 +304,7 @@ ul {
 /* row 3 */
 .row-3 {
   height: 100%;
-  width: 100%;
+  width: 100vw;
 }
 
 .column-iframe {
@@ -351,11 +351,6 @@ ul {
 
   }
 
-  .about-column {
-    width: 100%;
-    order: -1;
-
-  }
 
   .h2-about {
     font-size: 0.9em;
@@ -374,95 +369,91 @@ ul {
 
 /* row 4 */
 .row-4 {
-  width: 100%;
+  width: 100vw;
   height: 100%;
-
 }
 
-.row-4 {
-  /* background-color: rgba(180, 156, 156, 0.4) !important; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
+
 /* grid layout for contact seccion */
 
 /* desktop styles */
 
-.contact-grid{
-  margin:20px;
-  width: 90%;
-  height:100%;
-  gap: 10px;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  grid-template-rows: 10% 70%;
- 
-}
-.box-a{
-  grid-column: span 2 ;
-  padding:30px;
+.contact-grid {
+  margin: 0px;
+  width: 100vw;
+  height: 100%;
+  gap: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 25% 75%;
+
 }
 
-
-.form-wrapper{
-  display:flex;
-  justify-content:flex-start;
-  align-items:center;
-  
+.box-a {
+  /* grid-column: span 2 ; */
+  padding: 30px 40px;
+  text-align: center;
 }
 
-/* typo styles contact section */
 
-.box-a h1{
-  text-transform: uppercase;
-  letter-spacing: 3px;
+.form-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
 }
 
-.box-a h2{
-  font-weight: 200;
-  text-transform:capitalize;
-}
 
-.box-b-text{ 
-  padding:10px 20px; 
-  display:flex;
+
+.box-b-text {
+  /* padding: 20px 20px; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   gap: 30px;
 }
 
-.address,
-.phone{
-  padding:20px;
-    text-transform: capitalize;
+
+
+.box-b-text p {
+  max-width: 200px;
 }
 
-.box-b-text p{
-  max-width: 100px;
+.box-c {
+  width: 100%;
+  order: 1;
 }
 
 /* media for mobile */
-@media (max-width: 1000px){
-  .contact-grid{    
-    grid-template-columns:1fr;
-    grid-template-rows: 0.2fr 0.5fr 1fr;
+@media (max-width: 1000px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 0.25fr 0.4fr 1fr;
   }
-  .box-a{
-    grid-column: span none; ;
+
+  .box-a {
+    grid-column: span none;
+    ;
   }
- 
-  .form-wrapper{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    
+
+  .form-wrapper {
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
+
   .address,
-  .phone{
-    padding:10px;
+  .phone {
+    padding: 10px;
     text-transform: capitalize;
-  } 
-  .box-b-text{
-   gap: 10px;
   }
+
+  .box-b-text {
+    gap: 5px;
+  }
+
 
 }
