@@ -21,7 +21,7 @@
  border: transparent;
 }
 
-/* Row-3 */
+/* Row-3  about*/
 
 .iframe-about {
  position: relative;
@@ -37,80 +37,11 @@
  left: 0;
  width: 100%;
  height: 100%;
- padding: 20px
-}
-
-/* Then style the iframe to fit in the container div with full height and width */
-
-/* =========================
-Photo Page
-======================================= */
-
-/* photos page */
-
-.gallery-container {
- border: 1px solid red;
- display: flex;
- flex-wrap: wrap;
- justify-content: center;
- width: 80vw;
- height: 80%;
-
- margin: auto;
-}
-
-.gallery-photo {
- margin: 5px;
- flex-basis: 200px;
- flex-grow: 1;
- flex-shrink: 1;
- overflow: hidden;
 
 }
 
-.gallery-photo {
- object-fit: cover;
- object-position: center center;
- width: 100%;
- height: 100%;
-}
 
-
-.gallery-title {
- display: flex;
- flex-direction: column;
- justify-content: space-evenly;
- align-items: center;
- gap: 15px;
- margin: 40px;
-}
-
-.h1-gallery {
- padding: 10px;
- color: #222;
- font-size: 2em;
- letter-spacing: 5px;
-}
-
-.h2-gallery {
- text-transform: capitalize;
- color: rgb(126, 119, 119);
- font-size: medium;
- padding-top: 30px;
-
-}
-
-#row-photo-1 {
- height: 100%;
- display: flex;
- background-color: rgba(224, 218, 218, 0.4);
-}
-
-.photo-1 {
- border: 1px solid blue;
-}
-
-/* row-4  */
+/* Row 4 Contact  */
 
 /* Contact Form  */
 h1 {
@@ -230,28 +161,100 @@ textarea:required {
 
 
 .gmap_container{
- margin-top: 60px;
- margin-left:0px;
-	height: 0;
-	overflow: hidden;
-	padding-bottom: 50%; /* desired aspect ratio */
-	position: relative;
+margin-top: 30px;
+height: 0;
+overflow: hidden;
+padding-bottom: 50%; /* desired aspect ratio */
+position: relative;
 }
 
 .googlemap {
- /* padding: 20px; */
-	border: 0;
+ 
+ border: 0;
 	height: 100%;
 	left: 0;
 	position: absolute;
 	top: 0;
 	width: 100%;
- /* padding: 10px; */
+ padding: 10px;
+ padding-left: 40px;
 }
 
+.map_wrapper{
+width: 90%;
+}
 
 @media (max-width: 550px){
  .gmap_container{
   margin-left: 5px;
  }
 } 
+/* =========================
+Photo Page
+======================================= */
+
+/* photos page */
+
+.gallery-container {
+ border: 1px solid red;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ width: 80vw;
+ height: 80%;
+
+ margin: auto;
+}
+
+.gallery-photo {
+ margin: 5px;
+ flex-basis: 200px;
+ flex-grow: 1;
+ flex-shrink: 1;
+ overflow: hidden;
+
+}
+
+.gallery-photo {
+ object-fit: cover;
+ object-position: center center;
+ width: 100%;
+ height: 100%;
+}
+
+
+.gallery-title {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ align-items: center;
+ gap: 15px;
+ margin: 40px;
+}
+
+.h1-gallery {
+ padding: 10px;
+ color: #222;
+ font-size: 2em;
+ letter-spacing: 5px;
+}
+
+.h2-gallery {
+ text-transform: capitalize;
+ color: rgb(126, 119, 119);
+ font-size: medium;
+ padding-top: 30px;
+
+}
+
+#row-photo-1 {
+ height: 100%;
+ display: flex;
+ background-color: rgba(224, 218, 218, 0.4);
+}
+
+.photo-1 {
+ border: 1px solid blue;
+}
+
+/* 
