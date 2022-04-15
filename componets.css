@@ -44,151 +44,177 @@
 /* Row 4 Contact  */
 
 /* Contact Form  */
-h1 {
- margin: 10px 0 0 0;
- text-transform: capitalize;
-}
 
-h4 {
- margin: 0 0 20px 0;
-}
+/* ======== Media Queries */
+@media only screen and (min-width : 240px) {
 
-#contact-form {
- border-radius: 7px;
- padding: 10px;
- -webkit-border-radius: 7px;
- -moz-border-radius: 7px;
-}
+ h1 {
+  font: 500 200%/100% Ubuntu;
+  margin: 0 0 30px 10px;
+ }
 
-#contact-form input,
-#contact-form select,
-#contact-form textarea,
-#contact-form label {
- font-size: 15px;
- margin-bottom: 2px;
- font-family: Arial, san-serif;
-}
+ label {
+  display: block;
+  margin: 0 0 10px 10px;
+ }
 
-#contact-form input,
-#contact-form select,
-#contact-form textarea {
- width: 100%;
- background-color: #fff;
- border: 1px solid #000;
- -moz-border-radius: 4px;
- -webkit-border-radius: 4px;
- border-radius: 4px;
- margin-bottom: 25px;
- padding: 5px;
-}
+ #contact label {
+  width: 23%;
+  font-size: 150%;
+  text-align: left;
+ }
 
-#contact-form input:focus,
-#contact-form select:focus,
-#contact-form textarea:focus {
- background-color:rgba(255, 217, 217, 0.2);
-}
+ #contact input[type=text],
+ #contact input[type=email],
+ #contact textarea {
+  width: 94.3%;
+  font-size: 100%;
+  margin-left: 10px;
+ }
 
-#contact-form textarea {
- width: 100%;
- height: 150px;
-}
-
-#contact-form button[type="submit"] {
- cursor: pointer;
- width: 100%;
- border: none;
- background: rgb(109, 106, 106); 
-  
- color: rgb(250, 250, 250);
- margin: 0 0 5px;
- padding: 10px;
- border-radius: 5px;
-}
-
-#contact-form button[type="submit"]:hover {
- background-color: #fff;
-color:#000;
-border: 1px solid #000;
-}
-
-#contact-form button[type="submit"]:active {
- box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-input:required,
-textarea:required {
- box-shadow: none;
- -moz-box-shadow: none;
- -webkit-box-shadow: none;
- -o-box-shadow: none;
-}
-
-#contact-form .required {
- font-weight: bold;
- color: #565a5e;
-}
-
-/* Hide success/failure message
- (specially since the php is missing) */
-#failure,
-#success {
- color: #6EA070;
- display: none;
-}
-
-/* Make form look nice on smaller screens */
-@media only screen and (max-width: 580px) {
- #contact-form {
-  left: 3%;
-  margin-right: 3%;
-  width: 88%;
-  margin-left: 0;
-  padding-left: 3%;
-  padding-right: 3%;
+ #contact .button {
+  margin-left: 10px;
+  font-size: 130%;
  }
 }
 
-@media (min-width: 1000px){
- .form-wrapper{
- width: 100%;
- flex-direction: row;
- justify-content: space-around
-}
+
+@media only screen and (min-width : 480px) {
+
+
+
+
+ label,
+ input {
+  display: inline-block
+ }
+
+ #contact label {
+  font-size: 100%;
+  width: 20%;
+  text-align: right;
+ }
+
+ #contact label[for=message] {
+  vertical-align: top
+ }
+
+ #contact input[type=text],
+ #contact input[type=email],
+ #contact textarea {
+  width: 66.6667%;
+ }
+
+ #contact .button {
+  margin-left: 24%;
+  font-size: 90%;
+ }
 }
 
+
+/* ======== Positioning */
+.form-container {
+ width: 100%;
+ margin: 3.33334% auto;
+}
+
+/* ======== Divider */
+.line {
+ clear: both;
+ padding: 15px 0;
+ border-top: 1px solid #EBEBEB;
+}
+
+/* ======== inputs */
+#contact input[type=text],
+#contact input[type=email],
+#contact textarea {
+ color: #666;
+ box-sizing: border-box;
+ border: 1px solid #CCC;
+ border-radius: 3px;
+ padding: 5px 8px;
+}
+
+#contact input[type=text],
+#contact input[type=email] {
+ height: 40px
+}
+
+#contact textarea {
+ height: 200px;
+ min-height: 200px;
+ font-family: Ubuntu;
+ overflow: auto;
+ /* Removing default Scrollbar from IE */
+}
+
+#contact input[type=text]:focus,
+#contact input[type=email]:focus,
+#contact textarea:focus {
+ outline: none;
+ box-shadow: inset 1px 2px 3px #CCC;
+}
+
+/* Submit button */
+#contact .button {
+ padding: 10px 15px;
+ border: 1px solid #1A4F82;
+ border-radius: 3px;
+ color: #CFE6FC;
+ font-family: Ubuntu;
+ font-weight: 300;
+ background-color: #1A4F82;
+ background-image: linear-gradient(#215F9C, #1A4F82);
+ -o-background-image: linear-gradient(#215F9C, #1A4F82);
+ cursor: pointer;
+}
+
+#contact .button:hover {
+ -webkit-transition: all 0.5s ease-in-out 0s;
+ -moz-transition: all 0.5s ease-in-out 0s;
+ -o-transition: all 0.5s ease-in-out 0s;
+ transition: all 0.5s ease-in-out 0s;
+ background-image: linear-gradient(#2B75BD, #1F5F9C);
+ -o-background-image: linear-gradient(#2B75BD, #1F5F9C);
+ color: #FFF;
+ box-shadow: 2px 2px 3px #999;
+}
 
 /*  iframe map style*/
 
 
-.gmap_container{
-margin-top: 30px;
-height: 0;
-overflow: hidden;
-padding-bottom: 50%; /* desired aspect ratio */
-position: relative;
+.gmap_container {
+ margin-top: 30px;
+ height: 0;
+ overflow: hidden;
+ padding-bottom: 50%;
+ /* desired aspect ratio */
+ position: relative;
 }
 
 .googlemap {
- 
+
  border: 0;
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
+ height: 100%;
+ left: 0;
+ position: absolute;
+ top: 0;
+ width: 100%;
  padding: 10px;
  padding-left: 40px;
 }
 
-.map_wrapper{
-width: 90%;
+.map_wrapper {
+ width: 90%;
 }
 
-@media (max-width: 550px){
- .gmap_container{
+@media (max-width: 550px) {
+ .gmap_container {
   margin-left: 5px;
  }
-} 
+}
+
 /* =========================
 Photo Page
 ======================================= */

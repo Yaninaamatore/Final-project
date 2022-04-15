@@ -98,49 +98,28 @@
       </div>     
       <div class="box-c">       
         <div class="form-wrapper">
-          <div id="contact-form">
-            <div>
-            <br>
-            <h1>flick us a message</h1> 
-            <br>
-            <h4>Have a question or just want to get in touch? Let's chat.</h4> 
-           </div>
-            <p id="failure">Oopsie...message not sent.</p>  
-            <p id="success">Your message was sent successfully. Thank you!</p>
-          <form method="post" action="/">
-              <div>
-                  <label for="name">
-                    <span class="required">Name: *</span> 
-                    <input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
-                  </label> 
-              </div>
-              <div>
-                  <label for="email">
-                    <span class="required">Email: *</span>
-                    <input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
-                  </label>  
-              </div>
-              <div>		          
-                  <label for="subject">
-                  <span>Subject: </span>
-                    <select id="subject" name="subject" tabindex="4">   
-                       <option value="hello">Product Price Question</option>
-                       <option value="quote"> question one</option>  
-                       <option value="general">question two </option>
-                    </select>
-                  </label>
-              </div>
-              <div>		          
-                  <label for="message">
-                    <span class="required">Message: *</span> 
-                    <textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
-                  </label>  
-              </div>
-              <div>		           
-                  <button name="submit" type="submit" id="submit" >SEND</button> 
-              </div>
-            </form>      
-          </div> 
+          <div class="form-container">
+              <form id="contact" method="post" action="">
+                <div class="line">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name">
+                </div>
+        
+                <div class="line">
+                    <label for="email">e-Mail: </label>
+                    <input type="email" name="email" id="email">
+                </div>
+        
+                <div class="line">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" rows="3" cols="10"></textarea>
+                </div>
+        
+                <div class="line">
+                    <input type="submit" name="submit" value="Submit" class="button">
+                </div>
+            </form>
+          </div>
         </div>
       </div>       
       <div class="box-d">    
