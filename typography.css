@@ -8,26 +8,19 @@ html {
 
 /* navbar */
 
-.logo {
-  font-size: 1.7em;
+.navlogo {
+  font-size:2em;
   text-transform: uppercase;
 }
 
-ul,
-a {
-  font-size: 1em;
-  font-weight: bold;
+ul .navbar-li {
+  font-size:1.1em;
+  font-weight: 200px;
+  text-transform: capitalize;
 }
 
 
-.logo {
-  font-size: 1.7em;
-  text-transform: uppercase;
-}
 
-.navigation ul:hover {
-  color: rgb(110, 99, 99);
-}
 
 /* landig section typo */
 

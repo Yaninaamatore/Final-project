@@ -221,8 +221,10 @@ Photo Page
 
 /* photos page */
 
+
+
 .gallery-container {
- border: 1px solid red;
+
  display: flex;
  flex-wrap: wrap;
  justify-content: center;
@@ -283,4 +285,3 @@ Photo Page
  border: 1px solid blue;
 }
 
-/* 
