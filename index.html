@@ -6,15 +6,16 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="./assets/css/main.css">
  <script src="./script.js" defer></script>
+ <title>Homepage</title>
 </head>
 <body>
  <header class="header-home">
   <nav id="navbar">
     <ul>
       <li class="navlogo"><a href="#">logo</a></li>
-      <li class="navhome navbar-li"><a href="#">home</a></li>
-      <li class="navabout navbar-li"><a href="#">about</a></li>
-      <li class="navcontacts navbar-li"><a href="#">Contacts</a></li>
+      <li class="navhome navbar-li"><a href="./index.html">home</a></li>
+      <li class="navabout navbar-li"><a href="#about">about</a></li>
+      <li class="navcontacts navbar-li"><a href="#contact-sec">Contacts</a></li>
     </ul>
   </nav>
  </header>
@@ -26,7 +27,7 @@
     <h1 class="box-pt-second-line">project</h1>
     <h1 class="box-pt-third-line">name</h1>
    </div>
-    <div class="box b">
+    <div class="box b"></div>
   </section>
   <!-- ========= Intro Section ======================== -->
  <section class="row row-2">
@@ -62,7 +63,7 @@
       <div class="boxab video-ab">
         <div class="column-iframe">
           <div class="iframe-about">
-            <iframe class="iframe-youtube" src="https://www.youtube.com/embed/7OnwoLmrfBI?rel=0&theme=light"  frameborder="0"></iframe>
+            <iframe class="iframe-youtube" src="https://www.youtube.com/embed/7OnwoLmrfBI?rel=0&theme=light"></iframe>
         </div> 
       </div>
       </div>
@@ -71,11 +72,11 @@
 
   <!-- ========= Contact Section ======================== -->
 
-  <section class="row row-4" id="contact">
+  <section class="row row-4" id="contact-sec">
     <div class="contact-grid">
       <div class="box-a">
         <br>
-        <h1 >contact</h1>
+        <h1 class="h1">contact</h1>
         <br>
       </div>
       <div class="box-b">
@@ -99,7 +100,7 @@
       <div class="box-c">       
         <div class="form-wrapper">
           <div class="form-container">
-              <form id="contact" method="post" action="">
+              <form id="contact" method="post" action="#">
                 <div class="line">
                     <label for="name">Name: </label>
                     <input type="text" name="name" id="name">
@@ -125,25 +126,23 @@
       <div class="box-d">    
         <div class="map_wrapper">
           <div class="gmap_container">
-            <iframe class="googlemap"width="484" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=237%20Lambton%20Quay,%20Wellington%20Central,%20Wellington%206011&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+            <iframe class="googlemap" width="484" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=237%20Lambton%20Quay,%20Wellington%20Central,%20Wellington%206011&t=&z=15&ie=UTF8&iwloc=&output=embed">
             </iframe>
           </div>        
         </div>
       </div>
     </div>     
  </section>
- <section>
-   <div class="row-5" id="footer">     
-     <div class="wrapper_bottom_index">
-
-     </div>
-   </div>
- </section>
  </main>
  <footer class="footer">
    <div class="footer_wrapper">  
-    <a href="" class="btn_top"></a>  
-   </div>
+     <ul class="footer_ul">
+       <li><span class="footer-item">Created by <strong>Yanina Amatore</strong></span></li>
+       <li> <a class="footer-item" href="mailto:yaninaamatore@gmail.com">yaninaamatore@gmail.com</a></li>
+       <li> <a class="footer-item" href="https://github.com/Yaninaamatore" target="_blank"><i class="fa-brands fa-github fa-xl footer-item"></i></a>
+       </li>
+    </ul> 
+  </div>
  </footer>
 
 </body>

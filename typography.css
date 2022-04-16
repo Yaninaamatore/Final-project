@@ -34,6 +34,7 @@ ul .navbar-li {
 
 .box-pt-fist-line {
   font-size: 1.5em;
+  padding-left: 10px;
 }
 
 .box-pt-second-line,
@@ -46,7 +47,7 @@ ul .navbar-li {
 .text h1,
 .text h2 {
   text-align: center;
-  font-size: 1.5em
+  font-size: 10%;
 }
 
 .text h1 {
