@@ -6,8 +6,7 @@
 #navbar {
   height: 100%;
   background-color: rgb(53, 53, 53);
- 
-  /* box-shadow: 0 0 25px 0 black; */
+  box-shadow: 0 25px 0 0 black;
 
 }
 
@@ -38,14 +37,14 @@
 
 .navbar-li a:hover {
   background-color: #ffffff;
-  color:  #bebbbb;
+  color: #bebbbb;
 }
 
 
 /** Media Queries **/
 
 
-  /* Navbar Styling */
+/* Navbar Styling */
 @media(min-width:500px) {
 
   #navbar ul {
@@ -57,7 +56,7 @@
 
   .navlogo {
     grid-column: 1/2;
-  
+
   }
 
   .navhome {
@@ -278,7 +277,6 @@
   }
 }
 
-/* row-2 ends */
 
 /* ================= About Section ========================  */
 /* row 3 */
@@ -459,13 +457,34 @@ form {
 
 /* row-5 section bottom */
 .footer {
+  height: 15%;
   width: 100vw;
-  height: 60px;
 }
 
 .footer_wrapper {
   width: 100%;
   height: 100%;
   background: rgb(76, 75, 75);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+}
 
+.footer_ul {
+  margin: 5px 0;
+  list-style: none;
+  text-align: center;
+
+}
+
+.footer_ul li {
+  padding: 5px;
+}
+
+
+.footer_ul a,
+.footer_ul span {
+  color: #fff
 }
