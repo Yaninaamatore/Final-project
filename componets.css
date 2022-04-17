@@ -58,7 +58,7 @@
 .form {
  padding-top: 0px;
  height: 100%;
- background-color:transparent;
+ background-color: transparent;
 
 }
 
@@ -67,8 +67,7 @@
 }
 
 .f-row input,
-.f-row textarea
- {
+.f-row textarea {
  width: 100%;
  padding: 20px 20px;
  margin: 10px 0;
@@ -77,14 +76,29 @@
 
 }
 
+.btn-submit {
+ font-size: 0.5em;
+ font-weight: 600;
+ background-color: rgb(172, 170, 170);
+
+}
+
+.btn-submit:hover {
+ color: rgb(92, 66, 66);
+ background-color: #fff;
+ font-size: 0.6em;
+
+}
+
 /* media quert mobile */
 
-@media(max-width: 450px){
+@media(max-width: 450px) {
  .secfrmtitle {
   font-size: 1em;
   text-align: center;
  }
 }
+
 /*  iframe map style*/
 
 
@@ -134,19 +148,58 @@
 
 .btn-home a:hover {
  color: rgb(92, 66, 66);
+ background-color: #fff;
 }
 
 .btn-home .btn-contact {
  align-self: flex-start;
  justify-content: flex-end;
 }
+
 /* =========================
 Photo Page
 ======================================= */
 
 /* photos page */
 
+/* Navbar Gallery */
 
+.header-gallery {
+ height: 10vh;
+ width: 100vw;
+ border: 1px solid blue;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.navbar-gallery,
+.nav-ul-gallery {
+ width: 100vw;
+}
+
+.nav-ul-gallery {
+ display: flex;
+ display: flex;
+ justify-content: space-between;
+}
+
+.nav-ul-gallery li {
+ text-decoration: none;
+ list-style-type: none;
+
+}
+
+.nav-ul-gallery a {
+ text-decoration: none;
+ padding: 10px 50px;
+}
+
+.navhome{
+ font-size:2em;
+}
+
+/* navbar ends */
 
 .gallery-container {
 
