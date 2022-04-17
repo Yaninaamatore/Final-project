@@ -1,40 +1,67 @@
-html {
-  font-family: 'Nunito Sans', sans-serif;
-}
+/* ======  Navbar typo ====== */
 
-/* external libraries */
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
-
-/* navbar */
-
-.navlogo {
-  font-size: 2em;
+/* the logo is the same in index & gallery pages */
+.navlogo,
+.nav-logo {
+  font-size: 1.6em;
   text-transform: uppercase;
+  font-family: 'Rubik', sans-serif;
 }
 
-ul .navbar-li {
-  font-size: 1.1em;
-  font-weight: 200px;
+.navbar-li a {
+  font-size: 1.3em;
   text-transform: capitalize;
 }
 
+.navbar-li a:hover{
+font-size: 1.8em;
+background-color: grey;
+
+}
+
+.navbar-li:hover{
+
+  background-color: rgba(163, 162, 162, 0.1);
+  
+  }
+
+/* media query Navbar typo mobile */
+
+@media (max-width: 800px) {
+  .navlogo a{
+    font-size: 1em;
+    padding:0;
+  
+
+  }
+
+  .navbar-li a {
+    font-size: 1em;
+   
+  }
+  .navbar-li a:hover{
+    font-size: 1.3em;
+     
+    }
+
+}
 
 
 
-/* landig section typo */
+/* ======  landing section typo ====== */
 
 .box-pt-fist-line,
 .box-pt-second-line,
 .box-pt-third-line {
   text-transform: capitalize;
   color: #413737;
+ 
 }
 
 
 .box-pt-fist-line {
   font-size: 1.5em;
-  padding-left: 10px;
+  padding-left: 3px;
 }
 
 .box-pt-second-line,

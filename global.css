@@ -9,3 +9,10 @@ body {
 height: 100%;
 width:100vw;
 }
+
+/* fonts */
+
+html {
+ font-family: 'Nunito Sans','Ubuntu','Rubik', sans-serif;
+}
+

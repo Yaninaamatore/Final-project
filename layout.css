@@ -6,7 +6,6 @@
 #navbar {
   height: 100%;
   background-color: rgb(53, 53, 53);
-  box-shadow: 0 25px 0 0 black;
 
 }
 
@@ -18,7 +17,7 @@
   /* grid */
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: 0.5fr 1fr 0.5fr 0.5fr 0.5fr;
+  grid-template-rows:repeat(4, 0.5fr);
   align-items: center;
 }
 
@@ -33,11 +32,6 @@
   color: #ffffff;
   display: block;
   padding: 10px;
-}
-
-.navbar-li a:hover {
-  background-color: #ffffff;
-  color: #bebbbb;
 }
 
 
@@ -108,13 +102,7 @@
   grid-template-rows: repeat(3 1fr);
 }
 
-/* Landig section - left block styling */
-
-.a {
-  background-color: rgba(255, 255, 255, .30);
-  grid-column: 1;
-  grid-row: 1;
-}
+/*======Landig section - left block styling * ======/
 
 
 /** Media Queries **/
@@ -169,25 +157,32 @@
 /* section row-2 */
 .row-2 {
   width: 100vw;
-  height: 100vh;
-  display: flex;
+  height: 100%;
+  display: ;
+ 
   background-color: rgba(224, 218, 218, 0.4);
 }
 
-/* mobile view */
-.row-2 {
-  flex-direction: column;
+.container-1-row-2{
+  margin: 20px;
+  height: 100%;
+  width:100vw;
+  display:flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
 }
 
+/* mobile view */
+
 .boxes-row-two {
-  height: 42vh;
-  width: 90vw;
+margin:40px 0;
+ height: 60%;
+  width: 30vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, .5);
+  justify-content: center; 
+
+  background-color: rgba(253, 253, 253, 0.5);
 }
 
 .boxes-row-two .text {
@@ -229,24 +224,25 @@
 
 /* Media Queries for tablet and desktop */
 
-@media (min-width: 950px) {
+@media (max-width: 950px) {
   .row-2 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
   }
 
-  .text {
+  /* .text {
     align-content: space-evenly;
-  }
+  } */
 
   .boxes-row-two {
     height: 50vh;
-    width: 40vw;
+    width: 90vw;
     /* justify-content: center; */
   }
 
   .boxes-row-two .text {
+    width: 90vw;
     padding: 30px 20px;
   }
 
@@ -296,15 +292,13 @@
 
 .about_wrapper {
   /* width is 95% to see the borders */
-  border: 1px solid red;
   width: 90vw;
   height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-gap: 1vh;
-  /* padding:10px; */
-
+  gap: 1vh;
+  
 }
 
 /* box about-text */
@@ -538,7 +532,7 @@ Photo Page
   padding: 10px 100px;
 }
 
-.navhome {
+.nav-home {
   font-size: 2em;
 }
 
