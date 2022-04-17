@@ -105,32 +105,23 @@ ul .navbar-li {
 
 /* Row-4 typo styles contact section */
 
-.box-a h1{
-  text-transform: uppercase;
-  letter-spacing: 3px;
+.-b{
+  color: #fff;
+  padding:30px 20px;
+  font-size:1em; 
 }
 
-.box-a h2{
-  font-weight: 200;
-  text-transform:capitalize;
-}
-
-.address,
-.phone{
-  padding:20px;
+.box-b-text{
   text-transform: capitalize;
-  color: #666;
-
-
+  
+}
+.box-b-text h2{
+  text-decoration: underline;
 }
 
+.address p,
+.phone p{
+  max-width: 200px;
+  font-size:1em;
+}
 
-@media (max-width: 550px){
-  .box-b-text{ 
-    padding:10px 20px; 
-    display:flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  }
-  
