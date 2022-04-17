@@ -127,6 +127,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
+
   .row {
     width: 100vw;
     height: 70vh;
@@ -290,7 +291,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .about_wrapper {
@@ -359,18 +360,18 @@
 .row-4 {
   width: 100vw;
   height: 100%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(20, 20, 20);
-  }
+}
 
 
 /* grid layout for contact seccion */
 
 /* desktop styles */
 
-.contact-grid{
+.contact-grid {
   width: 90vw;
   height: 80%;
   margin: 5% 0;
@@ -400,59 +401,63 @@
 }
 
 .-c {
-  background-color: #fff;;
+  background-color: #fff;
+  ;
 }
 
 /* box -a Flex */
 
-.-b{
+.-b {
   display: flex;
   flex-direction: column;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
 }
 
-.box-b-text{
+.box-b-text {
   /* margin-top:30px; */
   display: flex;
-  flex-direction:row;
-  gap:20%;
+  flex-direction: row;
+  gap: 20%;
 
 }
 
 .btn-home {
   height: 100%;
-  align-self: flex-end; ;
+  align-self: flex-end;
+  ;
 }
 
 
-.box-b-text{
+.box-b-text {
   padding: 20px
 }
+
 /** Media Queries **/
 /*  for mobile  */
 
-@media (max-width: 700px){
-  .box-b-text{
+@media (max-width: 700px) {
+  .box-b-text {
     display: flex;
-    flex-direction:column;
-    gap:20%
+    flex-direction: column;
+    gap: 20%
   }
-  
-  .phone{
+
+  .phone {
     margin-top: 20px;
   }
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
   .contact-grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-}
-.-a {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}  
+  }
+
+  .-a {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
 
 }
 
@@ -489,4 +494,175 @@
 .footer_ul a,
 .footer_ul span {
   color: #fff
+}
+
+
+/* =========================
+Photo Page
+======================================= */
+
+/* photos page */
+
+/* Navbar Gallery */
+
+.header-gallery {
+  height: 8vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #353535;
+
+}
+
+.navbar-gallery,
+.nav-ul-gallery {
+  width: 100vw;
+}
+
+.nav-ul-gallery {
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-ul-gallery li {
+  text-decoration: none;
+  list-style-type: none;
+
+}
+
+.nav-ul-gallery a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 100px;
+}
+
+.navhome {
+  font-size: 2em;
+}
+
+/* navbar media query for small screens */
+
+@media (max-width: 500px) {
+  .nav-ul-gallery a {
+
+    padding: 10px 30px;
+  }
+}
+
+/* Gallery page navbar ends */
+
+/* Gallery Main */
+
+.row-1-g {
+  height: 100%;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90vw;
+  height: 100%;
+  margin: 5%;
+}
+
+.gallery-photo {
+  margin: 5px;
+  flex-basis: 280px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow: hidden;
+}
+
+img {
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  height: 100%;
+
+}
+
+.gallery-photo a img {
+  filter: blur(1px);
+  transform: scale(1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.gallery-photo a:hover img {
+  filter: blur(0px);
+  transform: scale(1.2);
+  transition: .02s ease-in-out;
+}
+
+/* Rows with photo details */
+
+#ph1,
+#ph3,
+#ph5,
+#ph7 {
+  background: rgba(221, 217, 217, .5);
+
+}
+
+.row-g {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-pic-container {
+  height: 100%;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 30%;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+
+
+/* .b1 img {
+  
+  box-shadow: 10px 0px  rgb(133, 124, 124); 
+  ;
+} */
+
+.gbox {
+  height: 80%;
+  width: 100%;
+  
+  
+}
+
+.b2 {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: #fff;  
+}
+
+.b1 img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  
+}
+
+@media (max-width:800px) {
+  .row-pic-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2 1fr);
+
+
+  }
+
+  .gbox {
+    height: 100%;
+  }
 }
