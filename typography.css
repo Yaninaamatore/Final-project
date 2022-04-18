@@ -32,7 +32,7 @@
 .form-title{
   font-size: 1em;
 }
-/* media queries fpr Gral Typo */
+/* media queries for Global  Typo */
 
 
 @media (max-width: 1200px) {
@@ -43,8 +43,13 @@
 
 @media (max-width: 550px) {
   .h1-title {
-    color: red;
     font-size: 1.4em;
+  }
+  .h2-subt{
+     font-size: 1.2em;
+  }
+  .p-text{
+    font-size: 0.9em
   }
 }
 /* ======  Navbar typo ====== */
@@ -98,7 +103,7 @@ background-color: grey;
 
 
 
-/* ======  landing section typo ====== */
+/* ======  row-1 landing section typo ====== */
 
 .box-pt-fist-line,
 .box-pt-second-line,
@@ -119,7 +124,47 @@ background-color: grey;
   font-size: 4em;
 }
 
-/* section row-2 */
+
+ /* <!-- ========= section row-2  Intro Section ======================== --> */
+
+.text h1,
+.text h2 {
+  text-align: center;
+  padding: 0.5em 0.5em 0.5em;
+
+}
+
+
+
+.text p {
+  text-align: left;
+  max-width: 400px;
+
+}
+
+.text {
+  gap: 2px;
+}
+
+.text h1,
+.text h2 {
+  min-width: 100%;
+}
+
+.text:first-child {
+  margin-top: 40px;
+}
+
+.p-text {
+  padding: 40px 20px;
+  text-indent: 1em;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  text-align:end;
+  max-width: 400px;
+  min-width: 300px;
+}
 
 
 
@@ -139,13 +184,6 @@ background-color: grey;
   text-align: center;
 }
 
-.p-about {
-  text-align: justify;
-  padding: 0 5px;
-  max-width: 400px;
-  min-width: 300px;
-
-}
 
 .p-about-one {
   background-color: rgba(222, 233, 160, 0.4)

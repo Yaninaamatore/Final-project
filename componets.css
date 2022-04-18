@@ -17,14 +17,15 @@
  background-color: transparent;
  border: 2px solid rgba(255, 255, 255, .5);
  color: rgba(255, 255, 255, .8);
+ font-family: "Rubik", sans-serif;
  font-size: 1.5em;
- text-transform: capitalize;
+ text-transform: uppercase;
 }
 
 .btn-gallery:hover {
  background-color: rgba(255, 255, 255, .5);
- color: rgb(119, 115, 115);
- border: transparent;
+ color: rgb(12, 12, 12);
+ border: rgb(12, 12, 12);
 }
 
 /* Row-3  about*/
@@ -56,9 +57,8 @@
  padding: 30px 30px 0px 30px;
  display: flex;
  flex-direction: column;
- /* justify-content: space-evenly */
  gap: 10px;
- /* border: 1px solid red; */
+
 }
 
 .form {
@@ -96,7 +96,7 @@
 
 }
 
-/* media quert mobile */
+/* media query mobile */
 
 @media(max-width: 450px) {
  .secfrmtitle {
