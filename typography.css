@@ -1,3 +1,52 @@
+/* Global Typo */
+.h1-title {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.8em !important;
+}
+
+.h1-title,
+.form-title
+{
+  text-transform: uppercase;
+  font-family: "Rubik", sans-serif;
+  
+}
+.h2-subt{
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+
+.text-cont{
+  font-size: 0.5em;
+  letter-spacing: 1;
+}
+
+.h2-cont{
+  font-size: 0.8em;
+  font-weight: 300;
+ 
+}
+
+.form-title{
+  font-size: 1em;
+}
+/* media queries fpr Gral Typo */
+
+
+@media (max-width: 1200px) {
+  .h1-title {
+     font-size: 1.3em 
+  }
+}
+
+@media (max-width: 550px) {
+  .h1-title {
+    color: red;
+    font-size: 1.4em;
+  }
+}
 /* ======  Navbar typo ====== */
 
 /* the logo is the same in index & gallery pages */
@@ -41,6 +90,7 @@ background-color: grey;
   }
   .navbar-li a:hover{
     font-size: 1.3em;
+    
      
     }
 
@@ -71,38 +121,8 @@ background-color: grey;
 
 /* section row-2 */
 
-.text h1,
-.text h2 {
-  text-align: center;
-  font-size: 10%;
-}
 
-.text h1 {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
 
-.text h2 {
-  font-weight: 200;
-}
-
-.text p {
-  text-align: left;
-  line-height: 1.2em;
-  padding: 10px;
-  max-width: 500px;
-  font-size: 1em;
-  letter-spacing: 1px;
-}
-
-@media (min-width: 400px) {
-
-  .text h1,
-  .text h2 {
-    font-size: 1.2em;
-
-  }
-}
 
 /* typo row 3 */
 
@@ -137,7 +157,7 @@ background-color: grey;
 .-b {
   color: #fff;
   padding: 30px 20px;
-  font-size: 1em;
+ 
 }
 
 .box-b-text {
@@ -151,12 +171,12 @@ background-color: grey;
 
 .address p,
 .phone p {
-  max-width: 200px;
-  font-size: 1em;
+  max-width: 250px;
+
 }
 
 
-/* typo Gallery page main */
+/* typo Gallery Page */
 
 .gallery-title {
   display: flex;
@@ -188,6 +208,8 @@ background-color: grey;
 
 }
 
+
+/* mobile */
 /* Gallery page typo b2 */
 
 .b2 h1,
@@ -200,7 +222,7 @@ background-color: grey;
 .b2 h1,
 .b2 h3 {
   text-transform: capitalize;
-
+  
 }
 
 .b2 h1 {
